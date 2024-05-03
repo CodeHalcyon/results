@@ -1,45 +1,39 @@
 /* Add this CSS to your stylesheet */
 body {
-  background-color:  #68b2a0;
+  background-color: #7230b9;
   margin: 0; /* Remove default body margin */
   display: flex;
   flex-direction: column;
   height: 100vh; /* Ensure the body fills the entire viewport height */
 }
-.content{
-
-}
-.healthkare{
-width: 215px;
-height: 48px;
-position: absolute;
-top: 34px;
-left: 6px;
-font-family: Poppins;
-font-size: 30px;
-font-weight: 600;
-line-height: 48px;
-letter-spacing: -0.02em;
-text-align: center;
-color: rgba(44, 105, 117, 1);
+.healthkare {
+  width: 215px;
+  height: 48px;
+  position: absolute;
+  top: 34px;
+  left: 6px;
+  font-family: Poppins;
+  font-size: 30px;
+  font-weight: 600;
+  line-height: 48px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: rgba(44, 105, 117, 1);
 }
 .main-content {
   flex: 1; /* Fill remaining vertical space */
-  background-color:  #131515; /* Set background color to white */
+  background-color: #131515; /* Set background color to white */
   padding: 20px; /* Add padding for content */
 }
-
 .vertical-navbar {
   display: block;
   width: auto;
   height: 1000;
   padding: 20px;
-  background-color: #68b2a0;
-  
-
+  background-color: #7230b9;
 }
 
-.healthkare-header{
+.healthkare-header {
   display: block;
   margin-top: 2px;
 }
@@ -48,7 +42,7 @@ color: rgba(44, 105, 117, 1);
   height: 48px;
   top: 23px;
   left: 20px;
-  color : rgba(255, 255, 255, 1);
+  color: rgba(255, 255, 255, 1);
   font-family: Poppins;
   font-size: 30px;
   font-weight: 600;
@@ -56,23 +50,21 @@ color: rgba(44, 105, 117, 1);
   letter-spacing: -0.02em;
   text-align: left;
   margin-bottom: -1px;
- 
 }
 
 .healthkare-header hr {
   width: 160px; /* Adjust the width as needed */
   /* height: 1px;  */
   border: none; /* Remove the default border */
-  border-top: 1px solid rgba(255, 255, 255, 1); 
+  border-top: 1px solid rgba(255, 255, 255, 1);
   display: inline-block; /* Align along with the text */
   margin-left: 8px;
 }
 
-
 .vertical-navbar ul {
   list-style-type: none;
   padding: 10px;
-  
+
   margin: 0;
 }
 .vertical-navbar li img {
@@ -83,25 +75,35 @@ color: rgba(44, 105, 117, 1);
   border-radius: 10px;
   bottom: 2px;
 }
-.datatable h2{
+.datatable h2 {
   margin-left: 20px;
 }
-.tr1{
-  background-color:  rgba(104, 178, 160, 1);
+.tr1 {
+  /* background-color:  rgba(104, 178, 160, 1); */
+  background: #7230b9;
+  color: white;
+  font-size: 1.2rem;
+}
+
+.tr2 {
+  font-size: 1rem;
+  transition: ease 0.344s;
+}
+
+.tr1:hover {
+  background-color: #7230b9;
 }
 
 .vertical-navbar ul li {
-  padding-bottom: 15px ;
+  padding-bottom: 15px;
 }
 
 .vertical-navbar ul li a {
-
   /* text-decoration: none; */
   font-size: 18px;
   margin-top: -16px;
- 
 }
-.nav-item1 ul li a{
+.nav-item1 ul li a {
   color: black;
 }
 .nav-item1 {
@@ -123,11 +125,25 @@ color: rgba(44, 105, 117, 1);
   margin-left: 50px; /* Add margin from the left */
   margin-top: 1px;
   margin-bottom: 20px;
-   
 }
 
-.vertical-navbar ul li  a:hover {
+.vertical-navbar ul li a:hover {
   color: lightgray;
+}
+@media only screen and (max-width: 768px) {
+  .vertical-navbar {
+    padding: 10px; /* Adjust padding for smaller screens */
+    background: red;
+  }
+  .vertical-navbar ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+  }
+  nav img {
+    display: none;
+  }
 }
 
 .top-bar {
@@ -172,7 +188,7 @@ color: rgba(44, 105, 117, 1);
 .patation table {
   border-collapse: collapse; /* Remove border spacing and use single border */
 }
-.patation table Image{
+.patation table Image {
   margin-top: 5px;
 }
 
@@ -184,7 +200,6 @@ color: rgba(44, 105, 117, 1);
   margin-left: 20px; /* Adjust the margin as needed */
 }
 
-
 .admin-info button:hover {
   text-decoration: underline;
 }
@@ -193,6 +208,7 @@ color: rgba(44, 105, 117, 1);
   background-color: #fff;
   width: 1240px;
   height: 670px;
+  overflow-y: scroll;
   padding: 20px;
   flex: 1; /* Fill remaining horizontal space */
   margin-right: 100px; /* Center horizontally */
@@ -203,32 +219,55 @@ color: rgba(44, 105, 117, 1);
   display: block; /* Set as block element */
 }
 
-.head-data{
+.head-data {
   padding-left: 20px;
 }
-.boxline{
+.boxline {
   display: flex;
   justify-self: start;
+  padding: 20px;
 }
 .box {
-  background-color: #ffffff;
+  background: rgb(253,0,255);
+  background: linear-gradient(340deg, rgba(253,0,255,1) 0%, rgba(158,0,255,1) 0%);
+  color: white;
   border: 1.5px solid hsl(0, 9%, 83%); /* Set border color */
   border-radius: 15px;
   width: 335px; /* Set width */
   height: auto; /* Set height */
   padding: 20px;
   margin-right: 20px; /* Add margin between boxes */
+  opacity: 0.7;
+  transition: ease 0.344s;
 }
 
+.box:hover{
+  opacity: 1;
+  transform: scale(1.1);
+  margin-right: 20px;
+}
+
+.box a{
+  color: white;
+  opacity: 0.9;
+  transition: ease 0.344s;
+
+}
+
+.box a:hover{
+  opacity: 1;
+  letter-spacing: 2px;
+  font-size: 1.1rem;
+  
+}
 .box:last-child {
   margin-right: 0; /* Remove margin for the last box */
 }
 
 .box h2 {
-  /* text-align: center; */
-  margin-left: 100px;
+  text-align: center;
 }
-.box h1{
+.box h1 {
   margin-top: 0;
   margin-bottom: 10px;
 }
@@ -247,7 +286,6 @@ color: rgba(44, 105, 117, 1);
 .topbartable {
   display: flex;
   align-items: center;
-  
 }
 
 .topbartable h2 {
@@ -256,6 +294,8 @@ color: rgba(44, 105, 117, 1);
 
 .fields {
   display: flex;
+  width: 80%;
+  margin-left: 60px;
 }
 
 .field {
@@ -263,19 +303,25 @@ color: rgba(44, 105, 117, 1);
 }
 
 .field label {
-  margin-right: 5px;
+  margin-inline: 10px;
+  font-size: 1.2rem;
 }
 
 .field input[type="text"],
 .field select {
-  padding: 5px;
+  padding: 10px;
+  outline: none;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1rem;
   border: 1px solid #ccc;
   border-radius: 5px;
+  /* background: red; */
 }
 
 .field select {
   padding-right: 25px; /* Add space for arrow icon */
-  background-image: url(''); /* Add arrow icon */
+  background-image: url(""); /* Add arrow icon */
   background-repeat: no-repeat;
   background-position: right center;
 }
@@ -289,15 +335,15 @@ tr {
   margin-bottom: 10px; /* Add margin between rows */
   border-radius: 10px; /* Add border radius */
 }
-.pagination{
+.pagination {
   padding: auto;
   text-align: right;
-  padding-bottom:  10px;
+  padding-bottom: 10px;
 }
 
 /* Adjust styles for table cells */
-th, td {
-  
+th,
+td {
   padding: 10px;
   text-align: left;
   /* border-bottom: 1px solid #ddd; */
@@ -309,8 +355,12 @@ th {
 }
 
 /* Hover effect */
-tr:hover {
+.tr2:hover {
   background-color: #f5f5f5;
+  font-weight: bold;
+  transform: scale(1.01);
+  border-radius: 20px;
+  box-shadow: 20px 10px 50px 1px gray;
 }
 
 .table-container table {
@@ -318,10 +368,10 @@ tr:hover {
   border-spacing: 10px;
   border: 2px solid #cdcbcb;
   border-radius: 15px; /* Set table width to 100% */
-   /* Collapse borders to prevent double borders */
+  /* Collapse borders to prevent double borders */
 }
-.datatable{
-  border: 1.5px solid hsl(0, 9%, 83%); 
+.datatable {
+  border: 1.5px solid hsl(0, 9%, 83%);
   display: block;
   border-radius: 15px;
   width: fit-content;
@@ -363,7 +413,46 @@ tr:hover {
 .type-clinic {
   background-color: #daffe0; /* Background color for clinic type */
   color: #29943a; /* Text color for clinic type */
+  width: 50%;
+  transition: ease 0.344s;
 }
+
+.type-clinic:hover {
+  width: 75%;
+}
+
+.video-cards-grid {
+  /* background: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 50px;
+  overflow: scroll;
+  gap: 10px;
+}
+
+.video-card {
+  /* background: blue; */
+  width: 50%;
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.video-card h2 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.video-card p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 20px;
+}
+
+.video-card iframe {
+  border-radius: 10px; /* Rounded corners for iframe */
+}
+
 /* Add this CSS to your stylesheet */
 @media only screen and (max-width: 600px) {
   body {
@@ -371,8 +460,8 @@ tr:hover {
   }
 
   .content {
-    /* Example: Adjust content styles for smaller screens */
-    padding: 10px;
+    width: 100px;
+    background: red;
   }
 
   .healthkare {
@@ -386,8 +475,40 @@ tr:hover {
   }
 
   .vertical-navbar {
-    /* Example: Adjust vertical-navbar styles for smaller screens */
-    display: none; /* Hide vertical navbar on smaller screens */
+    text-align: center;
+    display: flex;
+    justify-content: space-between; /* Align items horizontally with space between */
+    background-color: #f5f5f5;
+    padding: 10px 20px; /* Padding inside the navbar */
+  }
+
+  .vertical-navbar ul {
+    background-color: #131515;
+    border-radius: 20px;
+    margin-left: 250px;
+    text-align: center;
+    list-style-type: none; /* Remove default list styles */
+    display: flex; /* Make the navbar items flex items */
+  }
+
+  .vertical-navbar li {
+    text-align: center;
+    margin-right: 10px; /* Space between navbar items */
+  }
+
+  .vertical-navbar a {
+    text-align: center;
+    text-decoration: none;
+    color: white; /* Link color */
+  }
+
+  .vertical-navbar a:hover {
+    color: #007bff; /* Hover color */
+  }
+
+  .vertical-navbar img {
+    width: 30px; /* Adjust image/icon size */
+    height: 30px;
   }
 
   .datatable h2 {
@@ -412,15 +533,14 @@ tr:hover {
     top: 0;
     position: relative;
   }
-  .con{
+  .con {
     display: block;
     background-color: #29943a;
     height: 20px;
   }
-  .table{
+  .table {
     width: 200px;
   }
-  
 
   .dashboard-data {
     /* Example: Adjust dashboard-data styles for smaller screens */
@@ -442,12 +562,11 @@ tr:hover {
   .fields {
     /* Example: Adjust fields styles for smaller screens */
     flex-direction: column;
-    
   }
-  th{
+  th {
     padding: 20px;
   }
-  td{
+  td {
     font-size: 30px;
   }
 
@@ -455,7 +574,6 @@ tr:hover {
     /* Example: Adjust table row styles for smaller screens */
     font-size: 14px;
     font-size: 40px;
-    
   }
 
   .pagination {
@@ -473,6 +591,10 @@ tr:hover {
     width: 2000px; /* Let columns adjust their width automatically */
     padding: 10px; /* Add padding for better spacing */
     text-align: left; /* Align text to the left */
+  }
+
+  .nav-item1 {
+    display: none;
   }
 
   /* Add more styles as needed for smaller screens */
